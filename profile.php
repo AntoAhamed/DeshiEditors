@@ -51,7 +51,7 @@ else
 <body>
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#" style="color: white; font-family: Lucida Console;">DeshiEditor's</a>
+            <a class="navbar-brand" href="#" style="color: white; font-family: 'Times New Roman', Times, serif; font-size: 20px;">DeshiEditor's</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -59,22 +59,22 @@ else
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="home.php">Home</a>
+                        <a class="nav-link" aria-current="page" href="home.php" style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.php">About</a>
+                        <a class="nav-link" href="about.php" style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="service.php">Service</a>
+                        <a class="nav-link" href="service.php" style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">Service</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.php">Contact</a>
+                        <a class="nav-link" href="contact.php" style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.php">Login</a>
+                        <a class="nav-link" href="login.php" style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="registration.php">Signup</a>
+                        <a class="nav-link" href="registration.php" style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">Signup</a>
                     </li>
                 </ul>
             </div>
@@ -89,7 +89,7 @@ else
                     <?php
                     if($row['file'] == '')
                     {
-                        echo '<img src="thumbnail.jpg" width="100%" height="250px">';
+                        echo '<img src="user.png" width="100%" height="250px">';
                     }
                     else
                     {
