@@ -6,7 +6,7 @@ if(isset($_POST['email'])){
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $database = "deshieditorsclone";
+    $database = "deshieditors";
 
     $conn = mysqli_connect($servername, $username, $password, $database);
 
@@ -120,7 +120,7 @@ if(isset($_POST['email'])){
             </form>
         </div>
 
-        <p class="alter">Don't have an account? <a href="signup.html">Sign up</a> here</p>
+        <p class="alter">Don't have an account? <a href="registration.php">Sign up</a> here</p>
 
     </div>
 

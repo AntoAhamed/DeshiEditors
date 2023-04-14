@@ -3,7 +3,7 @@ if(isset($_POST['name'])){
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $database = "deshieditorsclone";
+    $database = "deshieditors";
 
     $conn = mysqli_connect($servername, $username, $password, $database);
 

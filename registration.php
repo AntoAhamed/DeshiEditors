@@ -3,7 +3,7 @@ if(isset($_POST['name'])){
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $database = "deshieditorsclone";
+    $database = "deshieditors";
 
     $conn = mysqli_connect($servername, $username, $password, $database);
 
@@ -179,7 +179,7 @@ if(isset($_POST['name'])){
             </form>
         </div>
 
-        <p class="alter">Already have an account? <a href="login.html">Login</a> here</p>
+        <p class="alter">Already have an account? <a href="login.php">Login</a> here</p>
 
     </div>
 

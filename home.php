@@ -70,7 +70,7 @@
             $servername = "localhost";
             $username = "root";
             $password = "";
-            $database = "deshieditorsclone";
+            $database = "deshieditors";
 
             $conn = mysqli_connect($servername, $username, $password, $database);
 
@@ -90,7 +90,17 @@
             $Content = $_POST['content'];
             $Budget = $_POST['budget'];
 
-            $sql = "SELECT * FROM `registration` WHERE `type` = '$Content' AND `budget` <= '$Budget';";
+            if($Content==="thumbnail")
+            {
+                $tmp = "Thumbnail Editor";
+                $sql = "SELECT * FROM `registration` WHERE `type` = '$tmp' AND `budget` <= '$Budget';";
+            }
+            else
+            {
+                $tmp = "Video Editor";
+                $sql = "SELECT * FROM `registration` WHERE `type` = '$tmp' AND `budget` <= '$Budget';";
+            }
+            
             $result = mysqli_query($conn, $sql);
 
             $num = mysqli_num_rows($result);
